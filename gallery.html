@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Gallery - Any Season</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Any Season Heating & Cooling Logo" class="logo">
+    <h1>Our Products</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Products</a></li>
+        <li><a href="custom.html">Custom Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Featured HVAC Systems</h2>
+    <div class="gallery">
+      <div class="product">
+        <img src="trane-ac.jpg" alt="Trane AC System">
+        <p>Trane High-Efficiency AC</p>
+        <button onclick="addToCart('Trane AC')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="coil.jpg" alt="Case Coil">
+        <p>Case Coil (Compatible with R454b)</p>
+        <button onclick="addToCart('Case Coil')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="sensor.jpg" alt="Safety Sensor">
+        <p>HVAC Safety Sensor</p>
+        <button onclick="addToCart('Safety Sensor')">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Any Season Heating & Cooling</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

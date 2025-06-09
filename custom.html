@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Order - Any Season</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Any Season Heating & Cooling Logo" class="logo">
+    <h1>Custom HVAC Order</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Products</a></li>
+        <li><a href="custom.html">Custom Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Design Your HVAC System</h2>
+    <form onsubmit="saveCustomOrder(event)">
+      <label for="systemType">Select System:</label>
+      <select id="systemType" required>
+        <option value="Trane AC">Trane AC</option>
+        <option value="Coil Only">Coil Only</option>
+        <option value="Sensor Only">Sensor Only</option>
+        <option value="Full System">Full System</option>
+      </select><br>
+
+      <label for="size">System Size (Tons):</label>
+      <input type="number" id="size" min="1" max="10" required><br>
+
+      <label for="comments">Additional Requirements:</label><br>
+      <textarea id="comments"></textarea><br>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Any Season Heating & Cooling</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
