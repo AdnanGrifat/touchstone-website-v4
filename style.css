@@ -37,7 +37,8 @@ nav ul li a {
 
 main {
   padding: 1em;
-  margin: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .hero {
